@@ -8,7 +8,7 @@ int main()
 
     while (a != 0)
     {
-        c = a % 10;
+        c = a % b;
 
         if (c <= 9)
             s += char(c + 48);
@@ -19,7 +19,7 @@ int main()
         a /= b;
     }
 
-    for (int i = s.length() - 1; i >= 0; i++)
+    for (int i = s.length() - 1; i >= 0; i--)
     {
         cout << s[i];
     }
